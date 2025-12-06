@@ -50,8 +50,8 @@ jobs:
       # Merge PRs with Ready to Merge label:
       - name: 'Merge PRs'
         env:
-          GH_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
           # Get all PRs with the "Ready to Merge" label:
           prs=$(gh pr list --label "Ready to Merge" --json number --jq '.[].number')
