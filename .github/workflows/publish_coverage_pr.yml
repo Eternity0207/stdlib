@@ -183,6 +183,7 @@ jobs:
           passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
           git_user_signingkey: true
           git_commit_gpgsign: true
+          workdir: ./www-test-code-coverage
 
       # Commit and push changes:
       - name: 'Commit and push changes'
