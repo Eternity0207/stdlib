@@ -27,6 +27,8 @@ tools:
   github:
     toolsets: [issues, pull_requests, repos]
     lockdown: false
+    min-integrity: none
+    repos: all
 
 network:
   allowed:
