@@ -22,7 +22,7 @@
 #
 # Checks whether issue/PR references in a PR body are actually related to the PR. Posts an informational comment when suspicious references are detected.
 #
-# gh-aw-metadata: {"schema_version":"v2","frontmatter_hash":"8472ea9f1a150c706a5ea7381d16d7d2a6d0fea23b9be14d36c1d4bba08e9dd4","compiler_version":"v0.61.2","strict":true}
+# gh-aw-metadata: {"schema_version":"v2","frontmatter_hash":"fbd6b33035c5f42b5998cfcaa59ec3255f42e23a7556cc9fff07df39f0c090d6","compiler_version":"v0.61.2","strict":true}
 
 name: "Check PR Issue References"
 "on":

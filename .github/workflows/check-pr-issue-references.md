@@ -25,6 +25,7 @@ engine:
 tools:
   github:
     toolsets: [issues, pull_requests, repos]
+    lockdown: false
 
 network:
   allowed:
