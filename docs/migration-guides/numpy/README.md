@@ -52,6 +52,8 @@ limitations under the License.
 | Prepend a zero-filled array of the same shape along a specified dimension | `np.concat((np.zeros_like(x), x), axis=dim)` | [`concat([zerosLike(x), x], {dim: dim})`][@stdlib/ndarray/concat] |
 | Remove singleton dimensions | `np.squeeze(x)` | [`removeSingletonDimensions(x)`][@stdlib/ndarray/remove-singleton-dimensions] |
 | Reverse the elements along a dimension | `np.flip(x, axis=dim)` | [`reverseDimension(x, dim)`][@stdlib/ndarray/reverse-dimension] |
+| Rotate an array by 90 degrees in a specified plane | `np.rot90(x, axis=dims)` | [`rot90(x, {dims: dims})`][@stdlib/ndarray/rot90] |
+| Rotate an array by 180 degrees in a specified plane | `np.rot90(x, k=2, axis=dims)` | [`rot180(x, {dims: dims})`][@stdlib/ndarray/rot180] |
 | Sort an array in-place | `x[:] = np.sort(x)` | [`sort(x)`][@stdlib/blas/ext/sort] |
 | Test whether an array contains at least `n` truthy values | `np.count_nonzero(x) >= n` | [`some(x, n)`][@stdlib/ndarray/some] |
 | Test whether an array contains truthy values | `np.any(x)` | [`any(x)`][@stdlib/ndarray/any] |
@@ -102,6 +104,10 @@ limitations under the License.
 [@stdlib/ndarray/remove-singleton-dimensions]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/remove-singleton-dimensions
 
 [@stdlib/ndarray/reverse-dimension]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/reverse-dimension
+
+[@stdlib/ndarray/rot90]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/rot90
+
+[@stdlib/ndarray/rot180]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/rot180
 
 [@stdlib/ndarray/rowcat]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/rowcat
 
